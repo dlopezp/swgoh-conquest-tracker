@@ -7,14 +7,14 @@
       <span>{{ $t(feat.description) }}</span>
     </div>
     <div>
-      <fragment v-if="editing">
+      <div v-if="editing">
         <vs-textarea :label="$t('feat.comments')" :value="tracker[feat.id] && tracker[feat.id].comments" @input="onEditComments" />
         <vs-button color="primary" type="flat" icon="done" size="small" @click="saveComment"></vs-button>
-      </fragment>
-      <fragment v-else>
+      </div>
+      <div v-else>
         <p v-if="comments">{{ comments }}</p>
         <vs-button color="primary" type="flat" icon="edit" size="small" @click="editComments"></vs-button>
-      </fragment>
+      </div>
     </div>
     <div slot="footer">
       <vs-row vs-justify="flex-end">
