@@ -1,0 +1,711 @@
+{
+  "id": "CONQUEST_13",
+  "nodesPerSector": 22,
+  "keycardsPerNode": 3,
+  "energyPerBattle": 20,
+  "startDate": 1,
+  "endDate": 1,
+  "easy": {},
+  "normal": {
+    "crates": {
+      "normal-01": {
+        "keycards": 80
+      },
+      "normal-02": {
+        "keycards": 130
+      },
+      "normal-03": {
+        "keycards": 180
+      },
+      "normal-04": {
+        "keycards": 235
+      },
+      "normal-05": {
+        "keycards": 300
+      },
+      "normal-06": {
+        "keycards": 390
+      },
+      "normal-07": {
+        "keycards": 495
+      }
+    },
+    "sector1": {
+      "id": "NORMAL_SECTOR_1",
+      "title": "SECTOR_1_TITLE",
+      "nodesFeats": [
+        {
+          "id": "NORMAL_SECTOR_1_NODE_FEAT_1",
+          "title": "NORMAL_SECTOR_1_NODE_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_1_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 8
+        },
+        {
+          "id": "NORMAL_SECTOR_1_NODE_FEAT_2",
+          "title": "NORMAL_SECTOR_1_NODE_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_1_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 8
+        },
+        {
+          "id": "NORMAL_SECTOR_1_NODE_FEAT_3",
+          "title": "NORMAL_SECTOR_1_NODE_FEAT_3_TITLE",
+          "description": "NORMAL_SECTOR_1_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_1_NODE_FEAT_4",
+          "title": "NORMAL_SECTOR_1_NODE_FEAT_4_TITLE",
+          "description": "NORMAL_SECTOR_1_NODE_FEAT_4_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_1_NODE_FEAT_5",
+          "title": "NORMAL_SECTOR_1_NODE_FEAT_5_TITLE",
+          "description": "NORMAL_SECTOR_1_NODE_FEAT_5_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_1_NODE_FEAT_6",
+          "title": "NORMAL_SECTOR_1_NODE_FEAT_6_TITLE",
+          "description": "NORMAL_SECTOR_1_NODE_FEAT_6_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_1_NODE_FEAT_7",
+          "title": "NORMAL_SECTOR_1_NODE_FEAT_7_TITLE",
+          "description": "NORMAL_SECTOR_1_NODE_FEAT_7_DESCRIPTION",
+          "keycards": 5
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "NORMAL_SECTOR_1_MINIBOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_1_MINIBOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_1_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 1
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "NORMAL_SECTOR_1_BOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_1_BOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_1_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 3
+        },
+        {
+          "id": "NORMAL_SECTOR_1_BOSS_FEAT_2",
+          "title": "NORMAL_SECTOR_1_BOSS_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_1_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 3
+        }
+      ]
+    },
+    "sector2": {
+      "id": "NORMAL_SECTOR_2",
+      "title": "SECTOR_2_TITLE",
+      "nodesFeats": [
+        {
+          "id": "NORMAL_SECTOR_2_NODE_FEAT_1",
+          "title": "NORMAL_SECTOR_2_NODE_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_2_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_2_NODE_FEAT_2",
+          "title": "NORMAL_SECTOR_2_NODE_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_2_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_2_NODE_FEAT_3",
+          "title": "NORMAL_SECTOR_2_NODE_FEAT_3_TITLE",
+          "description": "NORMAL_SECTOR_2_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 5
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "NORMAL_SECTOR_2_MINIBOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_2_MINIBOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_2_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 1
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "NORMAL_SECTOR_2_BOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_2_BOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_2_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 3
+        },
+        {
+          "id": "NORMAL_SECTOR_2_BOSS_FEAT_2",
+          "title": "NORMAL_SECTOR_2_BOSS_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_2_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 3
+        }
+      ]
+    },
+    "sector3": {
+      "id": "NORMAL_SECTOR_3",
+      "title": "SECTOR_3_TITLE",
+      "nodesFeats": [
+        {
+          "id": "NORMAL_SECTOR_3_NODE_FEAT_1",
+          "title": "NORMAL_SECTOR_3_NODE_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_3_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_3_NODE_FEAT_2",
+          "title": "NORMAL_SECTOR_3_NODE_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_3_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "NORMAL_SECTOR_3_NODE_FEAT_3",
+          "title": "NORMAL_SECTOR_3_NODE_FEAT_3_TITLE",
+          "description": "NORMAL_SECTOR_3_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 5
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "NORMAL_SECTOR_3_MINIBOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_3_MINIBOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_3_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 1
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "NORMAL_SECTOR_3_BOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_3_BOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_3_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 3
+        },
+        {
+          "id": "NORMAL_SECTOR_3_BOSS_FEAT_2",
+          "title": "NORMAL_SECTOR_3_BOSS_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_3_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 3
+        }
+      ]
+    },
+    "sector4": {
+      "id": "NORMAL_SECTOR_4",
+      "title": "SECTOR_4_TITLE",
+      "nodesFeats": [
+        {
+          "id": "NORMAL_SECTOR_4_NODE_FEAT_1",
+          "title": "NORMAL_SECTOR_4_NODE_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_4_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "NORMAL_SECTOR_4_NODE_FEAT_2",
+          "title": "NORMAL_SECTOR_4_NODE_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_4_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "NORMAL_SECTOR_4_NODE_FEAT_3",
+          "title": "NORMAL_SECTOR_4_NODE_FEAT_3_TITLE",
+          "description": "NORMAL_SECTOR_4_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 10
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "NORMAL_SECTOR_4_MINIBOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_4_MINIBOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_4_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 1
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "NORMAL_SECTOR_4_BOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_4_BOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_4_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 4
+        },
+        {
+          "id": "NORMAL_SECTOR_4_BOSS_FEAT_2",
+          "title": "NORMAL_SECTOR_4_BOSS_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_4_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 4
+        }
+      ]
+    },
+    "sector5": {
+      "id": "NORMAL_SECTOR_5",
+      "title": "SECTOR_5_TITLE",
+      "nodesFeats": [
+        {
+          "id": "NORMAL_SECTOR_5_NODE_FEAT_1",
+          "title": "NORMAL_SECTOR_5_NODE_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_5_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "NORMAL_SECTOR_5_NODE_FEAT_2",
+          "title": "NORMAL_SECTOR_5_NODE_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_5_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "NORMAL_SECTOR_5_NODE_FEAT_3",
+          "title": "NORMAL_SECTOR_5_NODE_FEAT_3_TITLE",
+          "description": "NORMAL_SECTOR_5_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 10
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "NORMAL_SECTOR_5_MINIBOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_5_MINIBOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_5_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 1
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "NORMAL_SECTOR_5_BOSS_FEAT_1",
+          "title": "NORMAL_SECTOR_5_BOSS_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_5_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 4
+        },
+        {
+          "id": "NORMAL_SECTOR_5_BOSS_FEAT_2",
+          "title": "NORMAL_SECTOR_5_BOSS_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_5_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 4
+        }
+      ]
+    },
+    "global": {
+      "id": "NORMAL_SECTOR_GLOBAL",
+      "title": "SECTOR_GLOBAL_TITLE",
+      "feats": [
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_1",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_1_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_1_DESCRIPTION",
+          "keycards": 9
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_2",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_2_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_2_DESCRIPTION",
+          "keycards": 9
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_3",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_3_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_3_DESCRIPTION",
+          "keycards": 9
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_4",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_4_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_4_DESCRIPTION",
+          "keycards": 9
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_5",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_5_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_5_DESCRIPTION",
+          "keycards": 1
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_6",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_6_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_6_DESCRIPTION",
+          "keycards": 1
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_7",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_7_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_7_DESCRIPTION",
+          "keycards": 1
+        }
+      ]
+    }
+  },
+  "hard": {
+    "crates": {
+      "hard-01": {
+        "keycards": 100
+      },
+      "hard-02": {
+        "keycards": 165
+      },
+      "hard-03": {
+        "keycards": 230
+      },
+      "hard-04": {
+        "keycards": 365
+      },
+      "hard-05": {
+        "keycards": 450
+      },
+      "hard-06": {
+        "keycards": 530
+      },
+      "hard-07": {
+        "keycards": 630
+      }
+    },
+    "sector1": {
+      "id": "HARD_SECTOR_1",
+      "title": "SECTOR_1_TITLE",
+      "nodesFeats": [
+        {
+          "id": "HARD_SECTOR_1_NODE_FEAT_1",
+          "title": "HARD_SECTOR_1_NODE_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_1_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 14
+        },
+        {
+          "id": "HARD_SECTOR_1_NODE_FEAT_2",
+          "title": "HARD_SECTOR_1_NODE_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_1_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 14
+        },
+        {
+          "id": "HARD_SECTOR_1_NODE_FEAT_3",
+          "title": "HARD_SECTOR_1_NODE_FEAT_3_TITLE",
+          "description": "HARD_SECTOR_1_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "HARD_SECTOR_1_NODE_FEAT_4",
+          "title": "HARD_SECTOR_1_NODE_FEAT_4_TITLE",
+          "description": "HARD_SECTOR_1_NODE_FEAT_4_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "HARD_SECTOR_1_NODE_FEAT_5",
+          "title": "HARD_SECTOR_1_NODE_FEAT_5_TITLE",
+          "description": "HARD_SECTOR_1_NODE_FEAT_5_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "HARD_SECTOR_1_NODE_FEAT_6",
+          "title": "HARD_SECTOR_1_NODE_FEAT_6_TITLE",
+          "description": "HARD_SECTOR_1_NODE_FEAT_6_DESCRIPTION",
+          "keycards": 5
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "HARD_SECTOR_1_MINIBOSS_FEAT_1",
+          "title": "HARD_SECTOR_1_MINIBOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_1_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 2
+        },
+        {
+          "id": "HARD_SECTOR_1_MINIBOSS_FEAT_2",
+          "title": "HARD_SECTOR_1_MINIBOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_1_MINIBOSS_FEAT_2_DESCRIPTION",
+          "keycards": 2
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "HARD_SECTOR_1_BOSS_FEAT_1",
+          "title": "HARD_SECTOR_1_BOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_1_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 3
+        },
+        {
+          "id": "HARD_SECTOR_1_BOSS_FEAT_2",
+          "title": "HARD_SECTOR_1_BOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_1_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 3
+        }
+      ]
+    },
+    "sector2": {
+      "id": "HARD_SECTOR_2",
+      "title": "SECTOR_2_TITLE",
+      "nodesFeats": [
+        {
+          "id": "HARD_SECTOR_2_NODE_FEAT_1",
+          "title": "HARD_SECTOR_2_NODE_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_2_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "HARD_SECTOR_2_NODE_FEAT_2",
+          "title": "HARD_SECTOR_2_NODE_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_2_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "HARD_SECTOR_2_NODE_FEAT_3",
+          "title": "HARD_SECTOR_2_NODE_FEAT_3_TITLE",
+          "description": "HARD_SECTOR_2_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "HARD_SECTOR_2_NODE_FEAT_4",
+          "title": "HARD_SECTOR_2_NODE_FEAT_4_TITLE",
+          "description": "HARD_SECTOR_2_NODE_FEAT_4_DESCRIPTION",
+          "keycards": 5
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "HARD_SECTOR_2_MINIBOSS_FEAT_1",
+          "title": "HARD_SECTOR_2_MINIBOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_2_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 2
+        },
+        {
+          "id": "HARD_SECTOR_2_MINIBOSS_FEAT_2",
+          "title": "HARD_SECTOR_2_MINIBOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_2_MINIBOSS_FEAT_2_DESCRIPTION",
+          "keycards": 2
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "HARD_SECTOR_2_BOSS_FEAT_1",
+          "title": "HARD_SECTOR_2_BOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_2_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 3
+        },
+        {
+          "id": "HARD_SECTOR_2_BOSS_FEAT_2",
+          "title": "HARD_SECTOR_2_BOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_2_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 3
+        }
+      ]
+    },
+    "sector3": {
+      "id": "HARD_SECTOR_3",
+      "title": "SECTOR_3_TITLE",
+      "nodesFeats": [
+        {
+          "id": "HARD_SECTOR_3_NODE_FEAT_1",
+          "title": "HARD_SECTOR_3_NODE_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_3_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "HARD_SECTOR_3_NODE_FEAT_2",
+          "title": "HARD_SECTOR_3_NODE_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_3_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "HARD_SECTOR_3_NODE_FEAT_3",
+          "title": "HARD_SECTOR_3_NODE_FEAT_3_TITLE",
+          "description": "HARD_SECTOR_3_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "HARD_SECTOR_3_NODE_FEAT_4",
+          "title": "HARD_SECTOR_3_NODE_FEAT_4_TITLE",
+          "description": "HARD_SECTOR_3_NODE_FEAT_4_DESCRIPTION",
+          "keycards": 10
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "HARD_SECTOR_3_MINIBOSS_FEAT_1",
+          "title": "HARD_SECTOR_3_MINIBOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_3_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 2
+        },
+        {
+          "id": "HARD_SECTOR_3_MINIBOSS_FEAT_2",
+          "title": "HARD_SECTOR_3_MINIBOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_3_MINIBOSS_FEAT_2_DESCRIPTION",
+          "keycards": 2
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "HARD_SECTOR_3_BOSS_FEAT_1",
+          "title": "HARD_SECTOR_3_BOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_3_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 4
+        },
+        {
+          "id": "HARD_SECTOR_3_BOSS_FEAT_2",
+          "title": "HARD_SECTOR_3_BOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_3_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 4
+        }
+      ]
+    },
+    "sector4": {
+      "id": "HARD_SECTOR_4",
+      "title": "SECTOR_4_TITLE",
+      "nodesFeats": [
+        {
+          "id": "HARD_SECTOR_4_NODE_FEAT_1",
+          "title": "HARD_SECTOR_4_NODE_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_4_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "HARD_SECTOR_4_NODE_FEAT_2",
+          "title": "HARD_SECTOR_4_NODE_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_4_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "HARD_SECTOR_4_NODE_FEAT_3",
+          "title": "HARD_SECTOR_4_NODE_FEAT_3_TITLE",
+          "description": "HARD_SECTOR_4_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 10
+        },
+        {
+          "id": "HARD_SECTOR_4_NODE_FEAT_4",
+          "title": "HARD_SECTOR_4_NODE_FEAT_4_TITLE",
+          "description": "HARD_SECTOR_4_NODE_FEAT_4_DESCRIPTION",
+          "keycards": 10
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "HARD_SECTOR_4_MINIBOSS_FEAT_1",
+          "title": "HARD_SECTOR_4_MINIBOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_4_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 3
+        },
+        {
+          "id": "HARD_SECTOR_4_MINIBOSS_FEAT_2",
+          "title": "HARD_SECTOR_4_MINIBOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_4_MINIBOSS_FEAT_2_DESCRIPTION",
+          "keycards": 3
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "HARD_SECTOR_4_BOSS_FEAT_1",
+          "title": "HARD_SECTOR_4_BOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_4_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 4
+        },
+        {
+          "id": "HARD_SECTOR_4_BOSS_FEAT_2",
+          "title": "HARD_SECTOR_4_BOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_4_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 4
+        }
+      ]
+    },
+    "sector5": {
+      "id": "HARD_SECTOR_5",
+      "title": "SECTOR_5_TITLE",
+      "nodesFeats": [
+        {
+          "id": "HARD_SECTOR_5_NODE_FEAT_1",
+          "title": "HARD_SECTOR_5_NODE_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_5_NODE_FEAT_1_DESCRIPTION",
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_5_NODE_FEAT_2",
+          "title": "HARD_SECTOR_5_NODE_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_5_NODE_FEAT_2_DESCRIPTION",
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_5_NODE_FEAT_3",
+          "title": "HARD_SECTOR_5_NODE_FEAT_3_TITLE",
+          "description": "HARD_SECTOR_5_NODE_FEAT_3_DESCRIPTION",
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_5_NODE_FEAT_4",
+          "title": "HARD_SECTOR_5_NODE_FEAT_4_TITLE",
+          "description": "HARD_SECTOR_5_NODE_FEAT_4_DESCRIPTION",
+          "keycards": 15
+        }
+      ],
+      "minibossFeats": [
+        {
+          "id": "HARD_SECTOR_5_MINIBOSS_FEAT_1",
+          "title": "HARD_SECTOR_5_MINIBOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_5_MINIBOSS_FEAT_1_DESCRIPTION",
+          "keycards": 3
+        },
+        {
+          "id": "HARD_SECTOR_5_MINIBOSS_FEAT_2",
+          "title": "HARD_SECTOR_5_MINIBOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_5_MINIBOSS_FEAT_2_DESCRIPTION",
+          "keycards": 3
+        }
+      ],
+      "bossFeats": [
+        {
+          "id": "HARD_SECTOR_5_BOSS_FEAT_1",
+          "title": "HARD_SECTOR_5_BOSS_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_5_BOSS_FEAT_1_DESCRIPTION",
+          "keycards": 5
+        },
+        {
+          "id": "HARD_SECTOR_5_BOSS_FEAT_2",
+          "title": "HARD_SECTOR_5_BOSS_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_5_BOSS_FEAT_2_DESCRIPTION",
+          "keycards": 5
+        }
+      ]
+    },
+    "global": {
+      "id": "HARD_SECTOR_GLOBAL",
+      "title": "SECTOR_GLOBAL_TITLE",
+      "feats": [
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_1",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_1_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_1_DESCRIPTION",
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_2",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_2_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_2_DESCRIPTION",
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_3",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_3_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_3_DESCRIPTION",
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_4",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_4_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_4_DESCRIPTION",
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_5",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_5_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_5_DESCRIPTION",
+          "keycards": 1
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_6",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_6_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_6_DESCRIPTION",
+          "keycards": 1
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_7",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_7_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_7_DESCRIPTION",
+          "keycards": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "index": {
+    "claim": "Plan and track your Galactic Conquest progress"
+  },
+
+  "modeSelect": {
+    "label": "Choose the dificulty:",
+    "placeholder": "Dificulty",
+    "easy": "Easy",
+    "normal": "Normal",
+    "hard": "Hard"
+  },
+
+  "crateSelect": {
+    "placeholder": "Crate",
+    "label": "Choose the crate",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7"
+  },
+
+  "sector": {
+    "nodesFeatsTitle": "Nodes feats",
+    "minibossFeatsTitle": "Miniboss Feats",
+    "bossFeatsTitle": "Boss feats"
+  },
+
+  "SECTOR_1_TITLE": "Sector 1",
+  "SECTOR_2_TITLE": "Sector 2",
+  "SECTOR_3_TITLE": "Sector 3",
+  "SECTOR_4_TITLE": "Sector 4",
+  "SECTOR_5_TITLE": "Sector 5",
+  "SECTOR_GLOBAL_TITLE": "Global feats",
+
+  "HARD_SECTOR_1_NODE_FEAT_1_TITLE": "--",
+  "HARD_SECTOR_1_NODE_FEAT_1_DESCRIPTION": "Gain Critical Over 20 times. (Complete the \"A New Hope\" feat to get the Critical Over Data Disk)",
+
+  "HARD_SECTOR_1_NODE_FEAT_2_TITLE": "--",
+  "HARD_SECTOR_1_NODE_FEAT_2_DESCRIPTION": "Gain Massively Overpoweres 20 times. (Complete the \"I Kno There is Good in you\" feat to get the Massive Overpowered disk)",
+
+  "HARD_SECTOR_1_NODE_FEAT_3_TITLE": "--",
+  "HARD_SECTOR_1_NODE_FEAT_3_DESCRIPTION": "Defeat 50 enemies with Bounty Hunter units",
+
+  "HARD_SECTOR_1_NODE_FEAT_4_TITLE": "--",
+  "HARD_SECTOR_1_NODE_FEAT_4_DESCRIPTION": "Win 5 battles with no Tanks in your squadron",
+
+  "HARD_SECTOR_1_NODE_FEAT_5_TITLE": "--",
+  "HARD_SECTOR_1_NODE_FEAT_5_DESCRIPTION": "Gain Foresight 60 times",
+
+  "HARD_SECTOR_1_NODE_FEAT_6_TITLE": "--",
+  "HARD_SECTOR_1_NODE_FEAT_6_DESCRIPTION": "Attempt to inflict Blind 40 times",
+
+  "HARD_SECTOR_1_MINIBOSS_FEAT_1_TITLE": "--",
+  "HARD_SECTOR_1_MINIBOSS_FEAT_1_DESCRIPTION": "Win with URoRRuR'R'R surviving",
+
+  "HARD_SECTOR_1_MINIBOSS_FEAT_2_TITLE": "--",
+  "HARD_SECTOR_1_MINIBOSS_FEAT_2_DESCRIPTION": "Win witn at least 3 Jawa units in your squad",
+
+  "HARD_SECTOR_1_BOSS_FEAT_1_TITLE": "--",
+  "HARD_SECTOR_1_BOSS_FEAT_1_DESCRIPTION": "Win with The Mandalorian surviving",
+
+  "HARD_SECTOR_1_BOSS_FEAT_2_TITLE": "--",
+  "HARD_SECTOR_1_BOSS_FEAT_2_DESCRIPTION": "Win without any Bounty Hunter in your squads"
+}
