@@ -1,4 +1,4 @@
-import { mapGetters, mapMutations } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   computed: {
@@ -9,9 +9,9 @@ export default {
     })
   },
   methods: {
-    ...mapMutations({
-      updateTracker: 'UPDATE_TRACKER',
-      mergeTracker: 'MERGE_TRACKER'
+    ...mapActions({
+      updateTracker: 'updateTracker',
+      mergeTracker: 'mergeTracker'
     })
   }
 }

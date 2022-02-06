@@ -33,15 +33,10 @@ export const actions = {
   },
   async logout () {
     await this.$fire.auth.signOut()
-  }
-}
-
-export const mutations = {
-  SET_CONQUEST: (state, { conquest }) => { state.conquest = conquest },
-  SET_TRACKER: (state, { tracker }) => { state.tracker = tracker },
-  async UPDATE_TRACKER (state, prop) {
+  },
+  async updateTracker ({ commit, state }, prop) {
     const newTracker = { ...(state.tracker || {}), ...prop }
-    state.tracker = newTracker
+    commit('SET_TRACKER', { tracker: newTracker })
 
     if (!state.user) {
       localStorage.setItem('tracker', JSON.stringify(newTracker))
@@ -50,9 +45,9 @@ export const mutations = {
 
     await this.$fire.firestore.collection('tracker').doc(state.user.uid).set(newTracker)
   },
-  async MERGE_TRACKER (state, prop) {
-    const newTracker = merge(state.tracker, prop)
-    state.tracker = newTracker
+  async mergeTracker ({ commit, state }, prop) {
+    const newTracker = merge((state.tracker || {}), prop)
+    commit('SET_TRACKER', { tracker: newTracker })
 
     if (!state.user) {
       localStorage.setItem('tracker', JSON.stringify(newTracker))
@@ -60,6 +55,19 @@ export const mutations = {
     }
 
     await this.$fire.firestore.collection('tracker').doc(state.user.uid).set(newTracker)
+  }
+}
+
+export const mutations = {
+  SET_CONQUEST: (state, { conquest }) => { state.conquest = conquest },
+  SET_TRACKER: (state, { tracker }) => { state.tracker = tracker },
+  UPDATE_TRACKER (state, prop) {
+    const newTracker = { ...(state.tracker || {}), ...prop }
+    state.tracker = newTracker
+  },
+  MERGE_TRACKER (state, prop) {
+    const newTracker = merge(state.tracker, prop)
+    state.tracker = newTracker
   },
   ON_AUTH_STATE_CHANGED_MUTATION: (state, { authUser, claims }) => {
     // console.log('ON_AUTH_STATE_CHANGED_MUTATION', { authUser, claims })

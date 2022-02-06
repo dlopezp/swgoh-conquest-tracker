@@ -8,7 +8,7 @@
     </div>
     <div>
       <div v-if="editing">
-        <vs-textarea :label="$t('feat.comments')" :value="tracker[feat.id] && tracker[feat.id].comments" @input="onEditComments" />
+        <vs-textarea :label="$t('feat.comments')" :value="tracker[feat.id] && tracker[feat.id].comments" @change="onEditComments" />
         <vs-button color="primary" type="flat" icon="done" size="small" @click="saveComment"></vs-button>
       </div>
       <div v-else>
@@ -54,14 +54,13 @@ export default {
   methods: {
     editComments () {
       if (!this.tracker[this.feat.id]) {
-        this.mergeTracker({ [this.feat.id]: { comments: '' } })
+        this.updateTracker({ [this.feat.id]: { comments: '' } })
       }
       this.editing = true
     },
     saveComment () { this.editing = false },
-    onEditComments (value) {
-      console.log(value)
-      this.mergeTracker({ [this.feat.id]: { comments: value } })
+    onEditComments ($event) {
+      this.updateTracker({ [this.feat.id]: { comments: $event.target.value } })
     },
     done () {
       const newDone = (this.isDone)
