@@ -32,7 +32,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/rollbar',
     '@/plugins/vuesax',
     '@/plugins/fragment',
     '@/plugins/init',
@@ -55,6 +54,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/sentry',
     [
       '@nuxtjs/i18n',
       {
@@ -114,6 +114,14 @@ export default {
       }
     ]
   ],
+
+  sentry: {
+    dsn: 'https://a6e03ba5693c49c38e2cc92335a49acc@o1137009.ingest.sentry.io/6189136',
+    config: {
+      // Add native Sentry config here
+      // https://docs.sentry.io/platforms/javascript/guides/vue/configuration/options/
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

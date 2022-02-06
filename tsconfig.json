@@ -29,7 +29,8 @@
       "@nuxt/content",
       "@types/node",
       "@types/i18n",
-      "@nuxtjs/auth-next"
+      "@nuxtjs/auth-next",
+      "@nuxtjs/sentry"
     ]
   },
   "exclude": [
