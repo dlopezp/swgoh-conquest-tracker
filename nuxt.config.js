@@ -1,3 +1,5 @@
+const isDev = process.env.NODE_ENV === 'development'
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -90,7 +92,7 @@ export default {
             memoryOnly: false, // default
             chunkName: process.env.NODE_ENV !== 'production' ? 'firebase-auth' : '[id]', // default
             enablePersistence: true,
-            emulatorPort: 8080,
+            emulatorPort: isDev ? 8080 : undefined,
             emulatorHost: 'localhost',
             settings: {
               // Firestore Settings - currently only works in SPA mode
@@ -104,7 +106,7 @@ export default {
               subscribeManually: false
             },
             ssr: false,
-            emulatorPort: 9099,
+            emulatorPort: isDev ? 9099 : undefined,
             emulatorHost: 'http://localhost',
           },
           analytics: true,
