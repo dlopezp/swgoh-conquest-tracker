@@ -13,6 +13,10 @@ jobs:
 
     env:
       ROUTER_BASE: ${{ secrets.ROUTER_BASE }}
+      SENTRY_PUBLISH_RELEASE: ${{ secrets.SENTRY_PUBLISH_RELEASE }}
+      SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+      SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+      SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
 
     steps:
       - name: Checkout
