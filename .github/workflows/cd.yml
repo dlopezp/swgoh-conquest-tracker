@@ -12,7 +12,7 @@ jobs:
         node: [14]
 
     env:
-      ROUTER_BASE: ${{ env.ROUTER_BASE }}
+      ROUTER_BASE: ${{ secrets.ROUTER_BASE }}
 
     steps:
       - name: Checkout
