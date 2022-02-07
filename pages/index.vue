@@ -4,7 +4,7 @@
       <div v-if="isLoggedIn">
         <p class="title">{{ $t('index.title') }}</p>
         <p class="subtitle">{{ $t('index.claim') }}</p>
-        <NuxtLink to="/tracker">
+        <NuxtLink :to="localePath('/tracker')">
           <vs-button
             color="primary"
             type="filled"
