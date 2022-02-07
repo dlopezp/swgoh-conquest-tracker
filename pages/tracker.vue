@@ -1,28 +1,5 @@
 <template>
   <div>
-    <h1>asdas</h1>
-    <!--
-    <select-mode />
-    <select-crate />
-
-    <keycard-status />
-
-    <fragment v-if="tracker.mode">
-      <sector v-for="sector in sectors" :key="sector" :sector="conquest[tracker.mode][sector]" />
-
-      <vs-card>
-        <div slot="header">
-          <h3>{{ $t(conquest[tracker.mode].global.title) }}</h3>
-        </div>
-        <div>
-          <feats :feats="conquest[tracker.mode].global.feats" />
-        </div>
-      </vs-card>
-    </fragment>
-    <fragment v-else>
-      <p>{{ $t('tracker.no_mode') }}</p>
-    </fragment>
-    -->
   </div>
 </template>
 
@@ -36,7 +13,8 @@ import { mapGetters } from 'vuex'
 
 export default {
   components: { Sector, SelectMode, SelectCrate, KeycardStatus },
-  layout: (ctx) => ctx.$device.isMobile ? 'mobiletracker' : 'tracker',
+  // layout: (ctx) => ctx.$device.isMobile ? 'mobiletracker' : 'tracker',
+  layout: 'mobiletracker',
   computed: {
     ...mapGetters({
       isLoggedIn: 'isLoggedIn',
