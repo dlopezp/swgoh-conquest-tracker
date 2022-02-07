@@ -1,5 +1,5 @@
 <template>
-  <fragment v-if="isLoggedIn">
+  <div v-if="isLoggedIn">
     <a-dropdown>
       <div @click="e => e.preventDefault()">
         <a-avatar
@@ -16,10 +16,10 @@
         </a-menu-item>
       </a-menu>
     </a-dropdown>
-  </fragment>
-  <fragment v-else>
+  </div>
+  <div v-else>
     LoginButton
-  </fragment>
+  </div>
 </template>
 
 <script>
