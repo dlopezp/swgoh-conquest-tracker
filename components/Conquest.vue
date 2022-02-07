@@ -1,0 +1,34 @@
+<template>
+  <div v-if="tracker.mode">
+    <a-collapse>
+      <a-collapse-panel v-for="sector in sectors" :key="sector">
+        <template slot="header">
+          <SectorHeader :sector-alias="sector" />
+        </template>
+        <Sector :sector-alias="sector" />
+      </a-collapse-panel>
+      <a-collapse-panel>
+        <template slot="header">
+          <SectorGlobalHeader />
+        </template>
+        <Feats sector-alias="global" zone-alias="feats" />
+      </a-collapse-panel>
+    </a-collapse>
+    </a-collapse>
+  </div>
+</template>
+<script>
+import common from '~/mixins/common';
+import SectorHeader from './SectorHeader.vue';
+import Sector from './Sector.vue';
+
+export default {
+    mixins: [common],
+    data() {
+        return {
+            sectors: ["sector1", "sector2", "sector3", "sector4", "sector5"]
+        };
+    },
+    components: { SectorHeader, Sector }
+};
+</script>

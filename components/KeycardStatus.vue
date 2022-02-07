@@ -1,14 +1,23 @@
 <template>
-  <div>
-    <p>{{ $t('keycards.max') }}: {{ keycardsMax }}</p>
-    <p>{{ $t('keycards.needed') }}: {{ keycardsNeeded }}</p>
-    <p>{{ $t('keycards.starred') }}: {{ keycardsStarred }}</p>
-    <p>{{ $t('keycards.done') }}: {{ keycardsDone }}</p>
-
-    <vs-alert v-if="keycardsNeeded > keycardsStarred" title="Danger" active="true" color="danger">
-      {{ $t('keycards.need_more_starred') }}
-    </vs-alert>
-  </div>
+  <a-descriptions
+    :title="$t('keycards.status')"
+    :column="{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 2 }"
+    size="small"
+    style="padding: 0 10px;"
+  >
+    <a-descriptions-item :label="$t('keycards.max')">
+      {{ keycardsMax }}
+    </a-descriptions-item>
+    <a-descriptions-item :label="$t('keycards.needed')">
+      {{ keycardsNeeded }}
+    </a-descriptions-item>
+    <a-descriptions-item :label="$t('keycards.starred')">
+      {{ keycardsStarred }}
+    </a-descriptions-item>
+    <a-descriptions-item :label="$t('keycards.done')">
+      {{ keycardsDone }}
+    </a-descriptions-item>
+  </a-descriptions>
 </template>
 
 <script>

@@ -24,6 +24,33 @@ html {
   margin: 0;
 }
 
+#__layout {
+  text-align: center;
+}
+#__layout .ant-layout-header,
+#__layout .ant-layout-footer {
+  background: #7dbcea;
+  color: #fff;
+}
+#__layout .ant-layout-footer {
+  line-height: 1.5;
+}
+#__layout .ant-layout-sider {
+  background: #3ba0e9;
+  color: #fff;
+  line-height: 120px;
+}
+#__layout .ant-layout-content {
+  min-height: 120px;
+  text-align: left;
+}
+#__layout > .ant-layout {
+  margin-bottom: 48px;
+}
+#__layout > .ant-layout:last-child {
+  margin: 0;
+}
+
 .sector-header {
   display: flex;
   justify-content: space-between;
@@ -31,4 +58,33 @@ html {
 
 .sector-header img {
   max-width: 13px;
+}
+.select-goal {
+  display: flex;
+  justify-content: center;
+}
+
+.select-goal--crate {
+
+}
+
+.select-goal--message {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sector-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sector-header--name {}
+.sector-header--keycards {}
+.sector-header--progress {}
+
+.feats .ant-list-item-action {
+  text-align: right;
 }

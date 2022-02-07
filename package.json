@@ -19,18 +19,19 @@
     "@nuxtjs/i18n": "^7.2.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sentry": "^5.1.7",
+    "ant-design-vue": "^1.7.8",
     "boxicons": "^2.0.7",
     "core-js": "^3.9.1",
     "deepmerge": "^4.2.2",
     "firebase": "^9.6.6",
     "material-icons": "^1.10.6",
     "nuxt": "^2.15.3",
-    "vue-fragment": "^1.5.1",
-    "vuesax": "^3.12.2"
+    "vue-fragment": "^1.5.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",
     "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/device": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@vue/test-utils": "^1.1.3",

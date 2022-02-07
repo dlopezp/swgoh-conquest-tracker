@@ -26,13 +26,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'vuesax/dist/vuesax.css',
     '~/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vuesax',
+    '@/plugins/ant',
     '@/plugins/fragment',
     '@/plugins/init',
   ],
@@ -43,8 +42,13 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/device'
   ],
+
+  device: {
+    refreshOnResize: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

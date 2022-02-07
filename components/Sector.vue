@@ -1,4 +1,33 @@
 <template>
+  <a-collapse>
+    <a-collapse-panel>
+      <template slot="header">
+        <NodesZoneHeader :sector-alias="sectorAlias" />
+      </template>
+      <p>{{ $t('sector.nodesKeycardsDescription') }}</p>
+      <a-input-number :min="0" :max="66" :default-value="sectorNodesKeycardsDone" @change="onSectorNodesKeycardsDoneChange" />
+      <a-input-number :min="0" :max="66" :default-value="sectorNodesKeycardsStarred" @change="onSectorNodesKeycardsStarredChange" />
+    </a-collapse-panel>
+    <a-collapse-panel>
+      <template slot="header">
+        <ZoneHeader :sector-alias="sectorAlias" zone-alias="nodesFeats" />
+      </template>
+      <Feats :sector-alias="sectorAlias" zone-alias="nodesFeats" />
+    </a-collapse-panel>
+    <a-collapse-panel>
+      <template slot="header">
+        <ZoneHeader :sector-alias="sectorAlias" zone-alias="minibossFeats" />
+      </template>
+      <Feats :sector-alias="sectorAlias" zone-alias="minibossFeats" />
+    </a-collapse-panel>
+    <a-collapse-panel>
+      <template slot="header">
+        <ZoneHeader :sector-alias="sectorAlias" zone-alias="bossFeats" />
+      </template>
+      <Feats :sector-alias="sectorAlias" zone-alias="bossFeats" />
+    </a-collapse-panel>
+  </a-collapse>
+<!--
   <vs-card>
     <div slot="header">
       <div class="sector-header">
@@ -57,49 +86,58 @@
       </vs-collapse>
     </div>
   </vs-card>
+  -->
 </template>
 
 <script>
 import { keycardsBySector } from '~/src/sector'
 import common from '~/mixins/common'
+import ZoneHeader from './ZoneHeader.vue'
+import NodesZoneHeader from './NodesZoneHeader.vue';
 
 export default {
-  name: "Sector",
-  props: { sector: Object },
-  mixins: [ common ],
-  computed: {
-    sectorKeycards () {
-      return keycardsBySector(this.sector)
+    name: "Sector",
+    props: { sector: Object, sectorAlias: String },
+    mixins: [common],
+    computed: {
+        sectorKeycards() {
+            return this.$store.getters.totalKeycardsInSector(this.tracker.mode, this.sectorAlias);
+        },
+        sectorNodesKeycardsDone() {
+            return this.$store.getters.doneKeycardsInSector(this.tracker.mode, this.sectorAlias);
+        },
+        sectorNodesKeycardsStarred() {
+            return this.$store.getters.starredKeycardsInSector(this.tracker.mode, this.sectorAlias);
+        },
+        isDone() {
+            return this.sectorNodesKeycardsDone > 0
+                && this.sectorNodesKeycardsDone >= this.sectorNodesKeycardsStarred;
+        },
+        isStarred() {
+            return this.sectorNodesKeycardsStarred > 0;
+        }
     },
-    sectorNodesKeycardsDone () {
-      return this.tracker[this.sector.id]?.nodesKeycardsDone || 0
+    data() {
+        return {
+            sectorZones: ["nodesFeats", "minibossFeats", "bossFeats"]
+        };
     },
-    sectorNodesKeycardsStarred () {
-      return this.tracker[this.sector.id]?.nodesKeycardsStarred || 0
+    methods: {
+      zone (alias) {
+        return this.$state.getters.zone(this.tracker.mode, this.sectorAlias, alias)
+      },
+        onSectorNodesKeycardsDoneChange(strValue) {
+            const value = Number(strValue);
+            const sectorId = this.$store.getters.sectorId(this.tracker.mode, this.sectorAlias);
+            this.mergeTracker({ [sectorId]: { nodesKeycardsDone: value } });
+        },
+        onSectorNodesKeycardsStarredChange(strValue) {
+            const value = Number(strValue);
+            const sectorId = this.$store.getters.sectorId(this.tracker.mode, this.sectorAlias);
+            this.mergeTracker({ [sectorId]: { nodesKeycardsStarred: value } });
+        }
     },
-    isDone () {
-      return this.sectorNodesKeycardsDone > 0
-        && this.sectorNodesKeycardsDone >= this.sectorNodesKeycardsStarred
-    },
-    isStarred () {
-      return this.sectorNodesKeycardsStarred > 0
-    }
-  },
-  data () {
-    return {
-      sectorZones: [ 'nodesFeats', 'minibossFeats', 'bossFeats' ]
-    }
-  },
-  methods: {
-    onSectorNodesKeycardsDoneChange (strValue) {
-      const value = Number(strValue)
-      this.mergeTracker({ [this.sector.id]: { nodesKeycardsDone: value } })
-    },
-    onSectorNodesKeycardsStarredChange (strValue) {
-      const value = Number(strValue)
-      this.mergeTracker({ [this.sector.id]: { nodesKeycardsStarred: value } })
-    }
-  }
+    components: { ZoneHeader, NodesZoneHeader }
 }
 </script>
 

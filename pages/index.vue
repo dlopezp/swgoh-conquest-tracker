@@ -5,14 +5,11 @@
         <p class="title">{{ $t('index.title') }}</p>
         <p class="subtitle">{{ $t('index.claim') }}</p>
         <NuxtLink :to="localePath('/tracker')">
-          <vs-button
-            color="primary"
-            type="filled"
-          >{{ $t('index.go_to_tracker') }}</vs-button>
+          <a-button type="primary">{{ $t('index.go_to_tracker') }}</a-button>
         </NuxtLink>
       </div>
       <div v-else>
-        <vs-button color="primary" type="filled" @click="login">{{ $t('index.login') }}</vs-button>
+        <a-button color="primary" type="filled" @click="login">{{ $t('index.login') }}</a-button>
       </div>
     </div>
   </div>

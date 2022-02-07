@@ -6,6 +6,7 @@ export default {
       isLoggedIn: 'isLoggedIn',
       tracker: 'getTracker',
       conquest: 'conquest',
+      user: 'user',
     })
   },
   methods: {

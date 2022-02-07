@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>asdas</h1>
+    <!--
     <select-mode />
     <select-crate />
 
@@ -20,6 +22,7 @@
     <fragment v-else>
       <p>{{ $t('tracker.no_mode') }}</p>
     </fragment>
+    -->
   </div>
 </template>
 
@@ -33,7 +36,7 @@ import { mapGetters } from 'vuex'
 
 export default {
   components: { Sector, SelectMode, SelectCrate, KeycardStatus },
-  layout: 'navbar',
+  layout: (ctx) => ctx.$device.isMobile ? 'mobiletracker' : 'tracker',
   computed: {
     ...mapGetters({
       isLoggedIn: 'isLoggedIn',
