@@ -11,6 +11,9 @@ jobs:
         os: [ubuntu-latest]
         node: [14]
 
+    env:
+      ROUTER_BASE: ${{ env.ROUTER_BASE }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@master
