@@ -5,7 +5,7 @@
     :label-placeholder="$t('modeSelect.label')"
     :value="tracker.mode"
     @input="onModeChange"
-    >
+  >
     <!-- ToDo: conseguir los datos del modo fácil -->
     <!-- <vs-select-item value="easy" :text="$t('modeSelect.easy')" /> -->
     <vs-select-item value="normal" :text="$t('modeSelect.normal')" />
@@ -21,7 +21,7 @@ export default {
     ...mapGetters({
       isLoggedIn: 'isLoggedIn',
       tracker: 'getTracker',
-      conquest: 'conquest',
+      conquest: 'conquest'
     })
   },
   methods: {

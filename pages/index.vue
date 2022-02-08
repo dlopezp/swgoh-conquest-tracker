@@ -2,14 +2,22 @@
   <div class="container">
     <div>
       <div v-if="isLoggedIn">
-        <p class="title">{{ $t('index.title') }}</p>
-        <p class="subtitle">{{ $t('index.claim') }}</p>
+        <p class="title">
+          {{ $t('index.title') }}
+        </p>
+        <p class="subtitle">
+          {{ $t('index.claim') }}
+        </p>
         <NuxtLink :to="localePath('/tracker')">
-          <a-button type="primary">{{ $t('index.go_to_tracker') }}</a-button>
+          <a-button type="primary">
+            {{ $t('index.go_to_tracker') }}
+          </a-button>
         </NuxtLink>
       </div>
       <div v-else>
-        <a-button color="primary" type="filled" @click="login">{{ $t('index.login') }}</a-button>
+        <a-button color="primary" type="filled" @click="login">
+          {{ $t('index.login') }}
+        </a-button>
       </div>
     </div>
   </div>
@@ -25,8 +33,8 @@ export default {
     })
   },
   methods: {
-    login: async function () {
-      var provider = new this.$fireModule.auth.GoogleAuthProvider()
+    async login () {
+      const provider = new this.$fireModule.auth.GoogleAuthProvider()
       await this.$fire.auth.signInWithRedirect(provider)
     }
   }

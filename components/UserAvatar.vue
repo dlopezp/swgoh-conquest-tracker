@@ -6,8 +6,10 @@
           v-if="user.photoURL"
           :src="user.photoURL"
           size="large"
-          />
-        <a-avatar v-else>{{ user.displayName.charAt(0).toLocaleUpperCase() }}</a-avatar>
+        />
+        <a-avatar v-else>
+          {{ user.displayName.charAt(0).toLocaleUpperCase() }}
+        </a-avatar>
       </div>
 
       <a-menu slot="overlay">
@@ -23,10 +25,10 @@
 </template>
 
 <script>
-import common from "~/mixins/common"
+import common from '~/mixins/common'
 
 export default {
-  mixins: [ common ],
+  mixins: [common],
   methods: {
     logout () {
       this.$store.dispatch('logout')

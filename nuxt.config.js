@@ -33,7 +33,7 @@ export default {
   plugins: [
     '@/plugins/ant',
     '@/plugins/fragment',
-    '@/plugins/init',
+    '@/plugins/init'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -41,10 +41,15 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/device'
   ],
+
+  eslint: {
+    fix: true
+  },
 
   device: {
     refreshOnResize: true
@@ -69,7 +74,7 @@ export default {
         detectBrowserLanguage: {
           useCookie: true,
           cookieKey: 'i18n_redirected',
-          redirectOn: 'root',
+          redirectOn: 'root'
         },
         defaultLocale: 'en',
         vueI18nLoader: true,
@@ -112,9 +117,9 @@ export default {
             },
             ssr: false,
             emulatorPort: isDev ? 9099 : undefined,
-            emulatorHost: 'http://localhost',
+            emulatorHost: 'http://localhost'
           },
-          analytics: true,
+          analytics: true
         }
       }
     ]
@@ -125,7 +130,7 @@ export default {
     config: {
       // Add native Sentry config here
       // https://docs.sentry.io/platforms/javascript/guides/vue/configuration/options/
-    },
+    }
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

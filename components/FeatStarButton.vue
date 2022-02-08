@@ -4,15 +4,15 @@
     :icon="isStarred ? 'star' : 'star'"
     :type="isStarred ? 'primary' : 'dashed'"
     @click="star"
-    />
+  />
 </template>
 
 <script>
-import common from "~/mixins/common"
+import common from '~/mixins/common'
 
 export default {
-  props: { feat: Object },
   mixins: [common],
+  props: { feat: { type: Object, required: true } },
   computed: {
     featsStarred () {
       return this.tracker.starred || []
@@ -25,9 +25,9 @@ export default {
     star () {
       const newStarred = (this.isStarred)
         ? this.featsStarred.filter(starredId => starredId !== this.feat.id)
-        : [ ...this.featsStarred, this.feat.id ]
+        : [...this.featsStarred, this.feat.id]
       this.updateTracker({ starred: newStarred })
-    },
+    }
   }
 }
 </script>

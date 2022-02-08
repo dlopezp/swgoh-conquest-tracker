@@ -24,7 +24,7 @@ export default {
     ...mapGetters({
       isLoggedIn: 'isLoggedIn',
       tracker: 'getTracker',
-      conquest: 'conquest',
+      conquest: 'conquest'
     }),
     crate () {
       const modeOptions = this.tracker[this.tracker.mode]

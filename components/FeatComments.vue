@@ -9,30 +9,32 @@
     <a-button type="dashed" shape="circle" icon="check" @click="saveComment" />
   </div>
   <div v-else>
-    <p v-if="comments">{{ comments }}</p>
+    <p v-if="comments">
+      {{ comments }}
+    </p>
     <a-button shape="circle" icon="edit" @click="editComments" />
   </div>
 </template>
 
 <script>
-import common from "~/mixins/common"
+import common from '~/mixins/common'
 
 export default {
-  mixins: [ common ],
-  props: { feat: Object },
+  mixins: [common],
+  props: { feat: { type: Object, required: true } },
+  data () {
+    return { editing: false }
+  },
   computed: {
     isDone () {
-      return this.$store.getters.doneIds.includes(this.feat.id);
+      return this.$store.getters.doneIds.includes(this.feat.id)
     },
     isStarred () {
-      return this.$store.getters.starredIds.includes(this.feat.id);
+      return this.$store.getters.starredIds.includes(this.feat.id)
     },
     comments () {
       return this.tracker[this.feat.id]?.comments || ''
     }
-  },
-  data () {
-    return { editing: false }
   },
   methods: {
     editComments () {

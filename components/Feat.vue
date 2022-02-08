@@ -1,5 +1,5 @@
 <template>
-  <vs-card class="feat-card" v-bind:class="{ 'feat-card--done': isDone, 'feat-card--starred': isStarred }">
+  <vs-card class="feat-card" :class="{ 'feat-card--done': isDone, 'feat-card--starred': isStarred }">
     <div slot="header">
       <h3>{{ $t(feat.title) }}</h3>
     </div>
@@ -9,17 +9,19 @@
     <div>
       <div v-if="editing">
         <vs-textarea :label="$t('feat.comments')" :value="tracker[feat.id] && tracker[feat.id].comments" @change="onEditComments" />
-        <vs-button color="primary" type="flat" icon="done" size="small" @click="saveComment"></vs-button>
+        <vs-button color="primary" type="flat" icon="done" size="small" @click="saveComment" />
       </div>
       <div v-else>
-        <p v-if="comments">{{ comments }}</p>
-        <vs-button color="primary" type="flat" icon="edit" size="small" @click="editComments"></vs-button>
+        <p v-if="comments">
+          {{ comments }}
+        </p>
+        <vs-button color="primary" type="flat" icon="edit" size="small" @click="editComments" />
       </div>
     </div>
     <div slot="footer">
       <vs-row vs-justify="flex-end">
-        <vs-button color="danger" :type="isDone ? 'filled' : 'border'" :icon="isDone ? 'task_alt' : 'radio_button_unchecked'" size="small" @click="done"></vs-button>
-        <vs-button color="primary" :type="isStarred ? 'filled' : 'border'" :icon="isStarred ? 'star' : 'star_border'" size="small" @click="toDo"></vs-button>
+        <vs-button color="danger" :type="isDone ? 'filled' : 'border'" :icon="isDone ? 'task_alt' : 'radio_button_unchecked'" size="small" @click="done" />
+        <vs-button color="primary" :type="isStarred ? 'filled' : 'border'" :icon="isStarred ? 'star' : 'star_border'" size="small" @click="toDo" />
       </vs-row>
     </div>
   </vs-card>
@@ -29,8 +31,11 @@
 import common from '~/mixins/common'
 
 export default {
-  props: { feat: Object },
-  mixins: [ common ],
+  mixins: [common],
+  props: { feat: { type: Object, required: true } },
+  data () {
+    return { editing: false }
+  },
   computed: {
     featsDone () {
       return this.tracker.done || []
@@ -48,9 +53,6 @@ export default {
       return this.tracker[this.feat.id]?.comments || ''
     }
   },
-  data () {
-    return { editing: false }
-  },
   methods: {
     editComments () {
       if (!this.tracker[this.feat.id]) {
@@ -65,14 +67,14 @@ export default {
     done () {
       const newDone = (this.isDone)
         ? this.featsDone.filter(doneId => doneId !== this.feat.id)
-        : [ ...this.featsDone, this.feat.id ]
+        : [...this.featsDone, this.feat.id]
       this.updateTracker({ done: newDone })
       setTimeout(() => document.activeElement.blur(), 0)
     },
     toDo () {
       const newStarred = (this.isStarred)
         ? this.featsStarred.filter(starredId => starredId !== this.feat.id)
-        : [ ...this.featsStarred, this.feat.id ]
+        : [...this.featsStarred, this.feat.id]
       this.updateTracker({ starred: newStarred })
       setTimeout(() => document.activeElement.blur(), 0)
     }

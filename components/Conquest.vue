@@ -18,17 +18,17 @@
   </div>
 </template>
 <script>
-import common from '~/mixins/common';
-import SectorHeader from './SectorHeader.vue';
-import Sector from './Sector.vue';
+import SectorHeader from './SectorHeader.vue'
+import Sector from './Sector.vue'
+import common from '~/mixins/common'
 
 export default {
-    mixins: [common],
-    data() {
-        return {
-            sectors: ["sector1", "sector2", "sector3", "sector4", "sector5"]
-        };
-    },
-    components: { SectorHeader, Sector }
-};
+  components: { SectorHeader, Sector },
+  mixins: [common],
+  data () {
+    return {
+      sectors: ['sector1', 'sector2', 'sector3', 'sector4', 'sector5']
+    }
+  }
+}
 </script>

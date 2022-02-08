@@ -16,11 +16,11 @@
 <script>
 import common from '~/mixins/common'
 export default {
-  props: {
-    mode: String,
-    crate: Number
-  },
   mixins: [common],
+  props: {
+    mode: { type: String, required: true },
+    crate: { type: Number, required: true }
+  },
   computed: {
     keycardsRequired () {
       const mode = this.tracker.mode

@@ -1,7 +1,9 @@
 <template>
   <div class="sector-header">
     <div class="sector-header--left">
-      <div class="sector-header--name">{{ $t(sector.title) }}</div>
+      <div class="sector-header--name">
+        {{ $t(sector.title) }}
+      </div>
       <div class="sector-header-keycards">
         Max: {{ totalKeycards }} <img src="~/assets/keycards.png" alt="" style="max-width: 15px;">
       </div>

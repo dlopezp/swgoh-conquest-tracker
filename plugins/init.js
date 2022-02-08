@@ -1,4 +1,4 @@
-export default async function ({ $content, store }, inject) {
+export default async function ({ $content, store }) {
   // ToDo: Parametrizar
   // ToDo: sacar del store y meter en un mixin
   const currentConquestId = 'CONQUEST_13'
