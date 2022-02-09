@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div>
     <v-tour name="newUser" :steps="steps" :options="options" :callbacks="callbacks">
       <template slot-scope="tour">
         <transition name="fade">
@@ -25,7 +25,7 @@
       </template>
     </v-tour>
     <div v-show="showBackdrop" class="backdrop" />
-  </fragment>
+  </div>
 </template>
 
 <script>

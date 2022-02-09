@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div>
     <SelectGoal data-v-step="1" />
     <KeycardStatus data-v-step="2" />
     <Conquest />
@@ -18,7 +18,7 @@
       <p>{{ $t('modal.welcome.first') }}</p>
       <p>{{ $t('modal.welcome.second') }}</p>
     </a-modal>
-  </fragment>
+  </div>
 </template>
 
 <script setup>
