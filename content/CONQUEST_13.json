@@ -38,13 +38,13 @@
           "id": "NORMAL_SECTOR_1_NODE_FEAT_1",
           "title": "NORMAL_SECTOR_1_NODE_FEAT_1_TITLE",
           "description": "NORMAL_SECTOR_1_NODE_FEAT_1_DESCRIPTION",
-          "keycards": 8
+          "keycards": 5
         },
         {
           "id": "NORMAL_SECTOR_1_NODE_FEAT_2",
           "title": "NORMAL_SECTOR_1_NODE_FEAT_2_TITLE",
           "description": "NORMAL_SECTOR_1_NODE_FEAT_2_DESCRIPTION",
-          "keycards": 8
+          "keycards": 5
         },
         {
           "id": "NORMAL_SECTOR_1_NODE_FEAT_3",
@@ -62,18 +62,6 @@
           "id": "NORMAL_SECTOR_1_NODE_FEAT_5",
           "title": "NORMAL_SECTOR_1_NODE_FEAT_5_TITLE",
           "description": "NORMAL_SECTOR_1_NODE_FEAT_5_DESCRIPTION",
-          "keycards": 5
-        },
-        {
-          "id": "NORMAL_SECTOR_1_NODE_FEAT_6",
-          "title": "NORMAL_SECTOR_1_NODE_FEAT_6_TITLE",
-          "description": "NORMAL_SECTOR_1_NODE_FEAT_6_DESCRIPTION",
-          "keycards": 5
-        },
-        {
-          "id": "NORMAL_SECTOR_1_NODE_FEAT_7",
-          "title": "NORMAL_SECTOR_1_NODE_FEAT_7_TITLE",
-          "description": "NORMAL_SECTOR_1_NODE_FEAT_7_DESCRIPTION",
           "keycards": 5
         }
       ],
@@ -329,6 +317,18 @@
           "title": "NORMAL_SECTOR_GLOBAL_FEAT_7_TITLE",
           "description": "NORMAL_SECTOR_GLOBAL_FEAT_7_DESCRIPTION",
           "keycards": 1
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_8",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_8_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_8_DESCRIPTION",
+          "keycards": 8
+        },
+        {
+          "id": "NORMAL_SECTOR_GLOBAL_FEAT_9",
+          "title": "NORMAL_SECTOR_GLOBAL_FEAT_9_TITLE",
+          "description": "NORMAL_SECTOR_GLOBAL_FEAT_9_DESCRIPTION",
+          "keycards": 8
         }
       ]
     }
@@ -365,13 +365,13 @@
           "id": "HARD_SECTOR_1_NODE_FEAT_1",
           "title": "HARD_SECTOR_1_NODE_FEAT_1_TITLE",
           "description": "HARD_SECTOR_1_NODE_FEAT_1_DESCRIPTION",
-          "keycards": 14
+          "keycards": 5
         },
         {
           "id": "HARD_SECTOR_1_NODE_FEAT_2",
           "title": "HARD_SECTOR_1_NODE_FEAT_2_TITLE",
           "description": "HARD_SECTOR_1_NODE_FEAT_2_DESCRIPTION",
-          "keycards": 14
+          "keycards": 5
         },
         {
           "id": "HARD_SECTOR_1_NODE_FEAT_3",
@@ -383,18 +383,6 @@
           "id": "HARD_SECTOR_1_NODE_FEAT_4",
           "title": "HARD_SECTOR_1_NODE_FEAT_4_TITLE",
           "description": "HARD_SECTOR_1_NODE_FEAT_4_DESCRIPTION",
-          "keycards": 5
-        },
-        {
-          "id": "HARD_SECTOR_1_NODE_FEAT_5",
-          "title": "HARD_SECTOR_1_NODE_FEAT_5_TITLE",
-          "description": "HARD_SECTOR_1_NODE_FEAT_5_DESCRIPTION",
-          "keycards": 5
-        },
-        {
-          "id": "HARD_SECTOR_1_NODE_FEAT_6",
-          "title": "HARD_SECTOR_1_NODE_FEAT_6_TITLE",
-          "description": "HARD_SECTOR_1_NODE_FEAT_6_DESCRIPTION",
           "keycards": 5
         }
       ],
@@ -679,19 +667,19 @@
           "id": "HARD_SECTOR_GLOBAL_FEAT_3",
           "title": "HARD_SECTOR_GLOBAL_FEAT_3_TITLE",
           "description": "HARD_SECTOR_GLOBAL_FEAT_3_DESCRIPTION",
-          "keycards": 15
+          "keycards": 1
         },
         {
           "id": "HARD_SECTOR_GLOBAL_FEAT_4",
           "title": "HARD_SECTOR_GLOBAL_FEAT_4_TITLE",
           "description": "HARD_SECTOR_GLOBAL_FEAT_4_DESCRIPTION",
-          "keycards": 15
+          "keycards": 1
         },
         {
           "id": "HARD_SECTOR_GLOBAL_FEAT_5",
           "title": "HARD_SECTOR_GLOBAL_FEAT_5_TITLE",
           "description": "HARD_SECTOR_GLOBAL_FEAT_5_DESCRIPTION",
-          "keycards": 1
+          "keycards": 15
         },
         {
           "id": "HARD_SECTOR_GLOBAL_FEAT_6",
@@ -703,7 +691,19 @@
           "id": "HARD_SECTOR_GLOBAL_FEAT_7",
           "title": "HARD_SECTOR_GLOBAL_FEAT_7_TITLE",
           "description": "HARD_SECTOR_GLOBAL_FEAT_7_DESCRIPTION",
-          "keycards": 1
+          "keycards": 15
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_8",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_8_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_8_DESCRIPTION",
+          "keycards": 14
+        },
+        {
+          "id": "HARD_SECTOR_GLOBAL_FEAT_9",
+          "title": "HARD_SECTOR_GLOBAL_FEAT_9_TITLE",
+          "description": "HARD_SECTOR_GLOBAL_FEAT_9_DESCRIPTION",
+          "keycards": 14
         }
       ]
     }
