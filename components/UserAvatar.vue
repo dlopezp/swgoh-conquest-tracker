@@ -20,7 +20,9 @@
     </a-dropdown>
   </div>
   <div v-else>
-    LoginButton
+    <a-button color="primary" type="link" @click="login">
+      {{ $t('index.login') }}
+    </a-button>
   </div>
 </template>
 
@@ -32,6 +34,10 @@ export default {
   methods: {
     logout () {
       this.$store.dispatch('logout')
+    },
+    async login () {
+      const provider = new this.$fireModule.auth.GoogleAuthProvider()
+      await this.$fire.auth.signInWithRedirect(provider)
     }
   }
 }

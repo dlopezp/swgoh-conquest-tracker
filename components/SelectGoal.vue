@@ -4,8 +4,9 @@
       :default-value="defaultValue"
       :options="options"
       @change="onChange"
+      @popupVisibleChange="onPopupVisibleChange"
     >
-      <GoalSelected v-if="mode" :mode="mode" :crate="crate" />
+      <GoalSelected v-if="tracker && mode && crate" :mode="mode" :crate="crate" />
       <UnselectedGoal v-else />
     </a-cascader>
   </div>
@@ -58,6 +59,9 @@ export default {
     this.crate = this.trackerCrate
   },
   methods: {
+    onPopupVisibleChange (value) {
+      this.$nuxt.$emit('goal-opened', { open: value })
+    },
     onChange (value) {
       const [mode, crate] = value
       this.crate = crate
@@ -65,6 +69,8 @@ export default {
 
       this.updateTracker({ mode })
       this.updateTracker({ [this.tracker.mode]: { crate } })
+
+      this.$nuxt.$emit('goal-selected')
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div v-if="tracker.mode">
-    <a-collapse>
+    <a-collapse class="conquest-collapse" @change="onChange">
       <a-collapse-panel v-for="sector in sectors" :key="sector">
         <template slot="header">
           <SectorHeader :sector-alias="sector" />
@@ -13,7 +13,6 @@
         </template>
         <Feats sector-alias="global" zone-alias="feats" />
       </a-collapse-panel>
-    </a-collapse>
     </a-collapse>
   </div>
 </template>
@@ -28,6 +27,13 @@ export default {
   data () {
     return {
       sectors: ['sector1', 'sector2', 'sector3', 'sector4', 'sector5']
+    }
+  },
+  methods: {
+    onChange () {
+      this.$nextTick(
+        () => this.$nuxt.$emit('sector-expanded')
+      )
     }
   }
 }

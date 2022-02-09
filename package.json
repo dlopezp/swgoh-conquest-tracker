@@ -26,7 +26,8 @@
     "firebase": "^9.6.6",
     "material-icons": "^1.10.6",
     "nuxt": "^2.15.3",
-    "vue-fragment": "^1.5.1"
+    "vue-fragment": "^1.5.1",
+    "vue-tour": "^2.0.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",

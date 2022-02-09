@@ -11,9 +11,7 @@
       </a-row>
     </a-layout-header>
     <a-layout-content>
-      <SelectGoal />
-      <KeycardStatus />
-      <Conquest />
+      <Nuxt />
     </a-layout-content>
     <a-layout-footer>Footer</a-layout-footer>
   </a-layout>
@@ -21,12 +19,9 @@
 
 <script>
 import UserAvatar from '~/components/UserAvatar.vue'
-import SelectGoal from '~/components/SelectGoal.vue'
-import KeycardStatus from '~/components/KeycardStatus.vue'
-import Conquest from '~/components/Conquest.vue'
 
 export default {
-  components: { UserAvatar, SelectGoal, KeycardStatus, Conquest }
+  components: { UserAvatar }
 }
 </script>
 

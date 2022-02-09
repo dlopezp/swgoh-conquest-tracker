@@ -33,7 +33,8 @@ export default {
   plugins: [
     '@/plugins/ant',
     '@/plugins/fragment',
-    '@/plugins/init'
+    '@/plugins/init',
+    '@/plugins/tour'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

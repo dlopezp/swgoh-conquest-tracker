@@ -1,5 +1,5 @@
 <template>
-  <a-collapse>
+  <a-collapse class="sector-collapse" @change="onChange">
     <a-collapse-panel>
       <template slot="header">
         <NodesZoneHeader :sector-alias="sectorAlias" />
@@ -99,10 +99,6 @@ export default {
   components: { ZoneHeader, NodesZoneHeader },
   mixins: [common],
   props: {
-    sector: {
-      type: Object,
-      required: true
-    },
     sectorAlias: {
       type: String,
       required: true
@@ -144,6 +140,11 @@ export default {
       const value = Number(strValue)
       const sectorId = this.$store.getters.sectorId(this.tracker.mode, this.sectorAlias)
       this.mergeTracker({ [sectorId]: { nodesKeycardsStarred: value } })
+    },
+    onChange () {
+      this.$nextTick(
+        () => this.$nuxt.$emit('zone-expanded')
+      )
     }
   }
 }

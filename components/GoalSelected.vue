@@ -23,9 +23,14 @@ export default {
   },
   computed: {
     keycardsRequired () {
+      if (!this.tracker) { return 0 }
       const mode = this.tracker.mode
+      if (!mode) { return 0 }
       const conquest = this.conquest[mode]
-      const crateSelected = this.tracker[mode].crate
+      if (!conquest) { return 0 }
+      const crateSelected = this.tracker[mode]?.crate
+      if (!crateSelected) { return 0 }
+
       return conquest.crates[`${mode}-0${crateSelected}`].keycards
     }
   }

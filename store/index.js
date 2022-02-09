@@ -3,12 +3,14 @@ import * as Sector from '~/src/sector'
 
 export const state = () => ({
   user: null,
+  isNewUser: false,
   tracker: null,
   conquest: null
 })
 
 export const getters = {
   isLoggedIn: state => !!state.user,
+  isNewUser: state => state.isNewUser,
   user: state => state.user,
   conquest: state => state.conquest,
   getTracker: state => state.tracker || {},
@@ -101,7 +103,6 @@ export const getters = {
 
 export const actions = {
   async onAuthStateChangedAction ({ commit }, { authUser }) {
-    // console.log('onAuthStateChangedAction', { authUser, claims })
     if (!authUser) {
       const strTracker = localStorage.getItem('tracker')
       if (strTracker) {
@@ -109,6 +110,13 @@ export const actions = {
         commit('SET_TRACKER', { tracker })
       }
       return
+    }
+
+    const isNewUserDoc = await this.$fire.firestore.collection('users').doc(authUser.uid).get()
+    const isNewuser = !isNewUserDoc.exists
+    if (isNewuser) {
+      commit('SET_NEW_USER', isNewuser)
+      await this.$fire.firestore.collection('users').doc(authUser.uid).set({ registered: true, email: authUser.email })
     }
 
     const userTracker = await this.$fire.firestore.collection('tracker').doc(authUser.uid).get()
@@ -155,8 +163,10 @@ export const mutations = {
     const newTracker = merge(state.tracker, prop)
     state.tracker = newTracker
   },
+  SET_NEW_USER (state, isNew) {
+    state.isNewUser = isNew
+  },
   ON_AUTH_STATE_CHANGED_MUTATION: (state, { authUser }) => {
-    // console.log('ON_AUTH_STATE_CHANGED_MUTATION', { authUser, claims })
     if (!authUser) {
       state.user = null
       state.tracker = null

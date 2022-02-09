@@ -1,6 +1,5 @@
 <template>
   <a-descriptions
-    :title="$t('keycards.status')"
     :column="{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 2 }"
     size="small"
     style="padding: 0 10px;"
@@ -12,7 +11,10 @@
       {{ keycardsNeeded }}
     </a-descriptions-item>
     <a-descriptions-item :label="$t('keycards.starred')">
-      {{ keycardsStarred }}
+      <a-badge v-if="keycardsNeeded > keycardsStarred" dot status="error">
+        <span>{{ keycardsStarred }}</span>
+      </a-badge>
+      <span v-else>{{ keycardsStarred }}</span>
     </a-descriptions-item>
     <a-descriptions-item :label="$t('keycards.done')">
       {{ keycardsDone }}
