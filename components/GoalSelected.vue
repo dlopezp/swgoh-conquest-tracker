@@ -6,7 +6,7 @@
     <div class="select-goal--message">
       <div>{{ $t(`modeSelect.${mode}`) }}-0{{ crate }}</div>
       <div>
-        {{ $t(`modeSelect.required`) }}: {{ keycardsRequired }}
+        {{ keycardsRequired }}
         <img src="~/assets/keycards.png" alt="" style="max-width: 15px;">
       </div>
     </div>

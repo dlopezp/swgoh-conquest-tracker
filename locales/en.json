@@ -3,8 +3,6 @@
     "claim": "Planifica y controla tu progreso en la Conquista Galáctica"
   },
 
-  "modeSelect.required": "Tarjetas necesarias",
-
   "keycards.max": "Máximo",
   "keycards.needed": "Necesarias",
   "keycards.starred": "Seleccionadas",
@@ -20,7 +18,7 @@
 
   "tour.newUser.chooseReward": "Elegir recompensa",
   "tour.newUser.chooseReward.title": "Primero, la recompensa",
-  "tour.newUser.chooseReward.description": "Elige el cofre que deseas obtener.",
+  "tour.newUser.chooseReward.description": "Pincha en el cofre para elegir la recompensa que deseas obtener.",
 
   "tour.newUser.keycards.title": "Tu progreso",
   "tour.newUser.keycards.description": "En esta zona puedes comprobar tu progreso.",
@@ -57,6 +55,8 @@
 
   "modal.tour.title": "¡Enhorabuena!",
   "modal.tour.content": "Ya estás listo. Continúa marcando como favoritos todos los logros que quieras conseguir.",
+
+  "selectGoal.choose": "Elije tu recompensa",
 
   "modeSelect": {
     "label": "Selecciona la dificultad:",
