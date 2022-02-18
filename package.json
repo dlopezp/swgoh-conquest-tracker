@@ -25,7 +25,7 @@
     "core-js": "^3.9.1",
     "deepmerge": "^4.2.2",
     "firebase": "^9.6.6",
-    "material-icons": "^1.10.6",
+    "material-icons": "^1.10.7",
     "nuxt": "^2.15.3",
     "vue-fragment": "^1.5.1",
     "vue-tour": "^2.0.0"
