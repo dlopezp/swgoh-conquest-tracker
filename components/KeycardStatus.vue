@@ -29,7 +29,7 @@ export default {
   mixins: [common],
   computed: {
     keycardsMax () {
-      if (!this.tracker) { return 0 }
+      if (!this.tracker?.mode) { return 0 }
       return this.$store.getters.totalKeycardsInMode(this.tracker.mode)
     },
     keycardsNeeded () {
