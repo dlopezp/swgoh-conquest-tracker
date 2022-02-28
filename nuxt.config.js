@@ -107,7 +107,8 @@ export default {
     '@/plugins/ant',
     '@/plugins/fragment',
     '@/plugins/init',
-    '@/plugins/tour'
+    '@/plugins/tour',
+    '@/plugins/update'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
