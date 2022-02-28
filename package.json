@@ -22,7 +22,7 @@
     "@nuxtjs/sentry": "^5.1.7",
     "ant-design-vue": "^1.7.8",
     "boxicons": "^2.0.7",
-    "core-js": "^3.9.1",
+    "core-js": "^3.21.1",
     "deepmerge": "^4.2.2",
     "firebase": "^9.6.6",
     "material-icons": "^1.10.6",
