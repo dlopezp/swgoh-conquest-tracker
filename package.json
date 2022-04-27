@@ -20,7 +20,7 @@
     "@nuxtjs/i18n": "^7.2.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sentry": "^5.1.7",
-    "ant-design-vue": "^1.7.8",
+    "ant-design-vue": "^3.2.2",
     "boxicons": "^2.0.7",
     "core-js": "^3.21.1",
     "deepmerge": "^4.2.2",
