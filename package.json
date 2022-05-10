@@ -24,7 +24,7 @@
     "boxicons": "^2.0.7",
     "core-js": "^3.21.1",
     "deepmerge": "^4.2.2",
-    "firebase": "^9.6.7",
+    "firebase": "^9.8.1",
     "material-icons": "^1.10.7",
     "nuxt": "^2.15.3",
     "vue-fragment": "^1.5.2",
